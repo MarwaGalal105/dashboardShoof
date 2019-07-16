@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Auth::routes();
@@ -25,6 +25,18 @@ Route::resource('dashboard/cities', 'dashboard\cities');
 Route::resource('dashboard/users', 'dashboard\users');
 Route::resource('dashboard/options', 'dashboard\options');
 Route::resource('dashboard/info', 'dashboard\info');
+
+
+
+Route::get('/front','front\home@index')->name('front');
+Route::resource('registerfront', 'front\registerfront');
+Route::resource('/lostchild','front\lostchild');
+Route::resource('/findchild','front\findchild');
+Route::get('search', 'front\lostchild@search')->name('search');
+Route::get('search', 'front\findchild@search')->name('search');
+Route::get('/contact','front\contact@index');
+Route::post('send', 'front\contact@sendmail');
+
 
 
 

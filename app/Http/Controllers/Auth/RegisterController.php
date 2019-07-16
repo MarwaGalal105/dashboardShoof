@@ -28,8 +28,16 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
-
+    protected function redirectTo()
+    {
+        if (auth()->user()->permission == 'admin') {
+            return '/home';
+        }
+       else if(auth()->user()->permission='user')
+       {
+           return '/front';
+       }
+    }
     /**
      * Create a new controller instance.
      *
