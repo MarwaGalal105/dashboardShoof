@@ -1,0 +1,134 @@
+
+  .body,p,ul,li,h3,h2,h4,a,textarea,select,button{
+    font-family: Tajawal !important; 
+  }
+h3{
+  font-size: 20px;
+}
+  input::placeholder{
+    font-family: Tajawal;
+  }
+  .cd-hero-slider li {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cd-hero-slider li:first-of-type {
+    background-color: #2c343b;
+    background-image: linear-gradient(rgb(134, 132, 132) , rgba(192,192,192,0.3)), url("../images/home/pic3.jpg") ;
+    
+  }
+  .cd-hero-slider li:nth-of-type(2) {
+    background-color: #2c343b;
+    background-image: linear-gradient(rgb(134, 132, 132) , rgba(192,192,192,0.3)), url("../images/home/pic2.jpg") !important;
+  }
+  .cd-hero-slider li:nth-of-type(3) {
+    background-color: #2c343b;
+    background-image: linear-gradient(rgb(134, 132, 132) , rgba(192,192,192,0.3)), url("../images/home/pic4.jpg") !important;
+  }
+  .cd-hero-slider li:nth-of-type(4) {
+    background-color: #2c343b;
+  }
+  .cd-hero-slider li:nth-of-type(5) {
+    background-color: #2c343b;
+    background-image: linear-gradient(rgb(134, 132, 132) , rgba(192,192,192,0.3)), url("../images/home/pic11.jpg") ;
+  }
+  .cd-hero-slider .cd-btn {
+    display: inline-block;
+    padding: 1em 1.2em;
+    margin-top: .8em;
+    /*background-color: rgba(212, 68, 87, 0.9);*/
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    -webkit-transition: background-color 0.8s;
+    -moz-transition: background-color 0.8s;
+    transition: background-color 0.8s;
+  }
+
+  .ulockd-ohour-info.style2 .ulockd-icon {
+    margin-top: 7px;
+  }
+  .container{
+      padding-right: 0px;
+  }
+.form-group label{
+  text-align: right;
+  
+}
+
+.booking_form {
+  background-color: #f3f3f3;
+  padding: 0 35px 5px;
+}
+
+.lost_form_one {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: -150px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 9;
+}
+.form-group{
+  margin-bottom: 15px;
+}
+.lost_form_one input,textarea,select {
+  border-radius: 0;
+  box-shadow: none;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.ulockd-btn-thm {
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  padding: 5px 25px;
+}
+.ulockd-social-linked {
+ 
+  position: relative;
+}
+.ulockd-welcm-ht {
+  color: #d3d3d3;
+  position: relative;
+  margin-top: 10px;
+}
+
+
+.ulockd-ohour-info.style2 {
+  border-right: 2px solid #ddd;
+  padding: 16px;
+  padding-top: 3px;
+  
+}
+.ulockd-ohour-info .ulockd-info > h3{
+  margin-right: 72px;
+}
+
+.ulockd-inner-home {
+  background-attachment: fixed;
+  background-image: url("../images/background/img1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-top: 170px;
+  position: relative;
+}
+
+.ulockd-bb-dashed {
+  padding: 10px;
+  width: 90%
+}

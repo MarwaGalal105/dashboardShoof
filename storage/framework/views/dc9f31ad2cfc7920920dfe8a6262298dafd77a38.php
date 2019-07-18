@@ -1,117 +1,445 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php $__env->startSection('content'); ?>
 
-    <title>AppDashboard| </title>
 
-    <!-- Bootstrap -->
-    <link href="<?php echo e(url('/')); ?>/public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="<?php echo e(url('/')); ?>/public/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="<?php echo e(url('/')); ?>/public/vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link href="<?php echo e(url('/')); ?>/public/vendors/animate.css/animate.min.css" rel="stylesheet">
 
-    <!-- Custom Theme Style -->
-    <link href="<?php echo e(url('/')); ?>/public/build/css/custom.min.css" rel="stylesheet">
-  </head>
-  <body class="login ">
-<div class="container">
-        <div class="login_wrapper">
-                <div class="animate form login_form">
-                  <section class="login_content">
-                    <form method="POST" action="<?php echo e(route('login')); ?>">
-                        <h1>Login Form</h1>
-                        <?php echo csrf_field(); ?>
+	<!-- Home Design -->
+	<div class="home-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 ulockd-pmz">
+					<div class="cd-hero">
+						<ul class="cd-hero-slider autoplay">
+							<li class="selected">
+								<div class="cd-full-width">
+									<h2>Welcome to Comfort Home</h2>
+									<h3>Best Old and Health Care Service For Your Parents And Old Man, Womens.</h3>
+									<a href="#" class="cd-btn btn btn-default ulockd-btn-thm">تعلم المزيد</a>
+								</div> <!-- .cd-full-width -->
+							</li>
 
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input id="email" type="email" placeholder="Email" class="form-control <?php if ($errors->has('email')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('email'); ?> is-invalid <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>" name="email" value="<?php echo e(old('email')); ?>" required autocomplete="email" autofocus>
+							<li>
+								<div class="cd-full-width">
+									<h2>Best Care Service From Us.</h2>
+									<h3>Best Old and Health Care Service For Your Parents And Old Man, Womens.</h3>
+									<a href="#0" class="cd-btn btn btn-default ulockd-btn-thm">خدماتنا</a>
+									<a href="#0" class="cd-btn btn btn-default ulockd-btn-styledark">تعلم المزيد</a>
+								</div> <!-- .cd-half-width -->
+							</li>
 
-                                <?php if ($errors->has('email')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('email'); ?>
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong><?php echo e($message); ?></strong>
-                                    </span>
-                                <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
-                            </div>
-                        </div>
+							<li>
+								<div class="cd-full-width">
+									<h2>Old And Health Care Service</h2>
+									<h3>Instead of moving into a long haul mind office as they age.</h3>
+									<a href="#0" class="cd-btn btn btn-default ulockd-btn-thm">خدماتنا</a>
+									<a href="#0" class="cd-btn btn btn-default ulockd-btn-styledark">تعلم المزيد</a>
+								</div> <!-- .cd-half-width -->								
+							</li>
 
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input id="password" type="password" placeholder="Password" class="form-control <?php if ($errors->has('password')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('password'); ?> is-invalid <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>" name="password" required autocomplete="current-password">
+							<li class="cd-bg-video">
+								<div class="cd-full-width style2">
+									<h2>Your Satisfaction Our Goal</h2>
+									<h3>Best Old and Health Care Service For Your Parents And Old Man, Womens.</h3>
+									<a href="#0" class="cd-btn btn btn-default ulockd-btn-thm">تعلم المزيد</a>
+								</div> <!-- .cd-full-width -->
 
-                                <?php if ($errors->has('password')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('password'); ?>
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong><?php echo e($message); ?></strong>
-                                    </span>
-                                <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
-                            </div>
-                        </div>
+								<div class="cd-bg-video-wrapper" data-video="assets/video/video">
+									<!-- video element will be loaded using jQuery -->
+								</div> <!-- .cd-bg-video-wrapper -->
+							</li>
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" <?php echo e(old('remember') ? 'checked' : ''); ?>>
+							<li>
+								<div class="cd-full-width">
+									<h2>Best Care For Your Parents</h2>
+									<h3>Consectetur adipisicing elit. Reprehenderit consectetur impedit.</h3>
+									<a href="#0" class="cd-btn btn btn-default ulockd-btn-thm">خدماتنا</a>
+									<a href="#0" class="cd-btn btn btn-default ulockd-btn-styledark">Get a Quote</a>
+								</div> <!-- .cd-full-width -->
+							</li>
+						</ul> <!-- .cd-hero-slider -->
 
-                                    <label class="form-check-label" for="remember">
-                                        <?php echo e(__('Remember Me')); ?>
+						<div class="cd-slider-nav">
+							<nav>
+								<span class="cd-marker item-1"></span>
 
-                                    </label>
+								<ul>
+									<li class="selected"><a href="#0"></a></li>
+									<li><a href="#0"></a></li>
+									<li><a href="#0"></a></li>
+									<li><a href="#0"></a></li>
+									<li><a href="#0"></a></li>
+								</ul>
+							</nav> 
+						</div> <!-- .cd-slider-nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Our About -->
+	<section class="ulockd-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="about-box">
+						<div class="ab-details">
+							<h2>مرحبا بكم في شوف توداي</h2>
+							<p>ساعدنا نلاقي طفلك</p>
+							<a class="btn btn-default ulockd-btn-white" href="#">قراءه المزيد</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-6">
+					<div class="about-slider text-right">
+					<?php $__currentLoopData = $lastlost; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $info): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+						
+						<div class="item">
+							<div class="about-box2">
+								<div class="ab-thumb">
+									
+									<img class="img-responsive img-whp" src="<?php echo e(asset('public/uploads/'.$info->image)); ?>"  alt="image" height="100" width="150" >
+								</div>
+								<div class="ab-details2">
+									<h4 class="text-thm"> <?php echo e($info->type); ?></h4>
+									<a class="btn btn-lg ulockd-btn-thm" href="<?php echo e(url('lostchild/'.$info->id)); ?>">قراءه المزيد</a>
+								</div>
+							</div>
+						</div>
+						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>	
+						<?php $__currentLoopData = $lastfound; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $info): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+						
+						<div class="item">
+							<div class="about-box2">
+								<div class="ab-thumb">
+									
+									<img class="img-responsive img-whp" src="<?php echo e(asset('public/uploads/'.$info->image)); ?>"  alt="image" height="100" width="150" >
+								</div>
+								<div class="ab-details2">
+									<h4 class="text-thm"><?php echo e($info->type); ?></h4>
+									
+								</div>
+							</div>
+						</div>
+						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>	
+			
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="row ulockd-appointment-form-one">
+                        <!-- Appointment Form Starts -->
+                        <?php if(Auth::check()): ?>
+	                    <form id="lost_form" name="lost_form" class="lost_form_one" action="<?php echo e(Route('lostchild.store')); ?>" method="POST"  enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left" data-parsley-validate="" novalidate="">
+							<?php echo csrf_field(); ?>
+							<div class="messages"></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+								<h2 class="text-thm">بلاغ</h2>
+                             
+							<div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="text" id="name" name="name" value="<?php echo e(old('name')); ?>"  placeholder="اسم المفقود" required class="form-control required datepicker hasDatepicker" >
+								</div>
+							  </div>
+					
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="text" id="address" name="address" value="<?php echo e(old('address')); ?>"  placeholder="العنوان" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+							 <div class="form-group">
+								  <div class="col-md-12 col-sm-6 col-xs-12">
+									<select  class="form-control required datepicker hasDatepicker" id="exampleFormControlSelect1" name="city"  placeholder="المحافظه">
+									  <?php $__currentLoopData = $cities; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $city): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+										  <option value="<?php echo e($city->name); ?>"><?php echo e($city->name); ?></option>
+									  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+									</select>
+								  </div>
+							</div>
+					
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="number" id="age" name="age" value="<?php echo e(old('age')); ?>"  placeholder="العمر" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="date" id="date" name="date" value="<?php echo e(old('date')); ?>"  placeholder="التاريخ" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+							  <div  class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								<select class="form-control required datepicker hasDatepicker" name="gender"  placeholder="الجنس" >
+										   <option value="male" selected>ذكر </option>
+										  <option value="female">انثي</option>
+					
+								</select>
+								</div>
+							</div>
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="number" id="telephone" name="telephone"  placeholder="رقم التليفون" value="<?php echo e(old('telephone')); ?>" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+					
+							  <div class="form-group">
+								  <div class="col-md-12 col-sm-6 col-xs-12">
+								  <textarea name="notes" id="notes"  placeholder="ملاحظات" required="required" class="form-control required datepicker hasDatepicker"></textarea>
+								  </div>
+							  </div>
+					
+							  <div class="form-group">
+								
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<input type="file" name="image" id="image"  placeholder="صوره" class="form-control required datepicker hasDatepicker"> </div>
+								</div>
+								<div class="form-group">
+							
+										<div class="col-md-12 col-sm-6 col-xs-12">
+												<select class="form-control required datepicker hasDatepicker" name="type"  placeholder="النوع" >
+														<option value="lost" selected>مفقود </option>
+														<option value="found">تم العثور عليه</option>
+									
+												</select>
+										</div>
+									</div>
+							
+							<div  class="form-group">
+						   
+								<div class="col-md-6 col-sm-6 col-xs-12">
+									<input type="hidden" id="status" name="status" value="0" >
+								</div>
+							</div>
+							  
+		                        <div class="form-group text-center">
+		                            <input id="form_botcheck" name="form_botcheck" class="form-control" value="" type="hidden">
+		                            <button type="submit" class="btn btn-lg ulockd-btn-thm" data-loading-text="Getting Few Sec...">ارسال</button>
                                 </div>
+                            
                             </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div>
-                                <button type="submit" class="btn btn-default submit">
-                                    <?php echo e(__('Login')); ?>
-
-                                </button>
-                               
-                                <?php if(Route::has('password.request')): ?>
-                                    <a class="reset_pass" href="<?php echo e(route('password.request')); ?>">
-                                        <?php echo e(__('Forgot Your Password?')); ?>
-
-                                    </a>
-                                <?php endif; ?>
+                        </form>
+                        <?php else: ?> 
+                        <form id="lost_form"  class="lost_form_one" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left" data-parsley-validate="" novalidate="">
+							<?php echo csrf_field(); ?>
+							<div class="messages"></div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+								<h2 class="text-thm">بلاغ</h2>
+                             
+							<div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="text" id="name" value="<?php echo e(old('name')); ?>"  placeholder="اسم المفقود" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="text" id="address"  value="<?php echo e(old('address')); ?>"  placeholder="العنوان" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+							 <div class="form-group">
+								  <div class="col-md-12 col-sm-6 col-xs-12">
+									<select  class="form-control required datepicker hasDatepicker" id="exampleFormControlSelect1"   placeholder="المحافظه">
+									  <?php $__currentLoopData = $cities; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $city): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+										  <option value="<?php echo e($city->name); ?>"><?php echo e($city->name); ?></option>
+									  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+									</select>
+								  </div>
+							</div>
+					
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="number" id="age"  value="<?php echo e(old('age')); ?>"  placeholder="العمر" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="date" id="date"  value="<?php echo e(old('date')); ?>"  placeholder="التاريخ" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+							  <div  class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								<select class="form-control required datepicker hasDatepicker"   placeholder="الجنس" >
+										   <option value="male" selected>ذكر </option>
+										  <option value="female">انثي</option>
+					
+								</select>
+								</div>
+							</div>
+					
+							  <div class="form-group">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								  <input type="number" id="telephone"   placeholder="رقم التليفون" value="<?php echo e(old('telephone')); ?>" required class="form-control required datepicker hasDatepicker">
+								</div>
+							  </div>
+					
+					
+							  <div class="form-group">
+								  <div class="col-md-12 col-sm-6 col-xs-12">
+								  <textarea  id="notes"  placeholder="ملاحظات" required="required" class="form-control required datepicker hasDatepicker"></textarea>
+								  </div>
+							  </div>
+					
+							  <div class="form-group">
+								
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<input type="file"  id="image"  placeholder="صوره" class="form-control required datepicker hasDatepicker"> </div>
+								</div>
+								<div class="form-group">
+							
+										<div class="col-md-12 col-sm-6 col-xs-12">
+												<select class="form-control required datepicker hasDatepicker"   placeholder="النوع" >
+														<option selected>مفقود </option>
+														<option>تم العثور عليه</option>
+									
+												</select>
+										</div>
+									</div>
+							
+							<div  class="form-group">
+						   
+								<div class="col-md-6 col-sm-6 col-xs-12">
+									<input type="hidden" id="status"  >
+								</div>
+							</div>
+							  
+		                        <div class="form-group text-center">
+		                            <input id="form_botcheck"  class="form-control" value="" type="hidden">
+		                            <button onclick="myFunction()" class="btn btn-lg ulockd-btn-thm">ارسال</button>
+                                </div> 
+                                
                             </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="separator">
-                        <div>
-                                <h1><i class="fa fa-paw"></i> App Dashboard!</h1>
-                                <p>@ <?php echo e(now()->year); ?> All Rights Reserved. Privacy and Terms</p>
-                              </div>
-                        </div>
-                    </form>
-                  </section>
-                </div>
-            </div>
-</div>
+                        </form>
+                        <?php endif; ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-</body>
-</html>
+	<!-- Our Service -->
+	
 
-<?php /**PATH D:\wamp\www\ShoofToday\resources\views/auth/login.blade.php ENDPATH**/ ?>
+		<!-- Our Testimonial -->
+		
+		
+
+	<!-- Our Feature Service -->
+	<section class="ulockd-fservice">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div class="ulockd-dtitle hvr-float-shadow">
+						<h2 id="C2" class="text-uppercase"> <span class="text-thm">مفقودين</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="fs_slider">
+				<?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $info): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+				<?php if($info->type =='lost'): ?>
+					<div class="item">
+						<div class="ulockd-fservice-box text-right hvr-float-shadow">
+							<div class="db-thumb">
+									<img class="img-responsive img-whp" src="<?php echo e(asset('public/uploads/'.$info->image)); ?>"  alt="image" height="100" width="150">
+								<div class="db-overlayer"><span title="Feature Service Icon" class="fas fa-frown"></span></div>
+							</div>
+							<div class="db-details">
+								<h4><?php echo e($info->name); ?></h4>
+								<p><?php echo e($info->notes); ?></p>
+								<button type="submit" class="btn btn-default ulockd-btn-thm">قراءه المزيد</button>
+							</div>
+						</div>
+					</div>
+					<?php endif; ?>
+					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>	
+					
+				
+				
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our First Divider -->
+	<section class="ulockd-frst-divider style1 parallax" data-stellar-background-ratio="0.3">
+		<div class="container">
+			<div class="row">
+		
+				<div class="col-sm-3 col-md-3 col-lg-3">
+					<div class="ulockd-ffact-one">
+							<span class="ulockd-icon-let flaticon-multiple-users-silhouette pull-right"></span>
+						
+                        <p>تم العثور عليهم</p>
+                        <div class="timer"><?php echo e($countfound); ?></div>
+					</div>
+				</div>
+
+				<div class="col-sm-3 col-md-3 col-lg-6">
+					<div class="ulockd-ffact-one">
+							<span class="ulockd-icon-let flaticon-staff-symbol pull-right"></span>
+                       	 <p>مفقودين</p>
+                        <div class="timer"><?php echo e($countlost); ?></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Our Team -->
+	<section class="ulockd-fservice">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="ulockd-dtitle hvr-float-shadow">
+							<h2 id="C2" class="text-uppercase"> <span class="text-thm">تم العثور عليهم</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="fs_slider">
+					<?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $info): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+					<?php if($info->type =='found'): ?>
+						<div class="item">
+							<div class="ulockd-fservice-box text-right hvr-float-shadow">
+								<div class="db-thumb">
+										<img class="img-responsive img-whp" src="<?php echo e(asset('public/uploads/'.$info->image)); ?>"  alt="image" height="100" width="150">
+									<div class="db-overlayer"><span title="Feature Service Icon" class="fas fa-grin-hearts"></span></div>
+								</div>
+								<div class="db-details">
+									<h4><?php echo e($info->name); ?></h4>
+									<p><?php echo e($info->notes); ?></p>
+									<button type="submit" class="btn btn-default ulockd-btn-thm">قراءه المزيد</button>
+								</div>
+							</div>
+						</div>
+						<?php endif; ?>
+						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>	
+						
+					
+					
+						
+					</div>
+				</div>
+			</div>
+		</section>
+	
+
+	
+
+	
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('front.layouts.main', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\wamp\www\ShoofToday\resources\views/auth/login.blade.php ENDPATH**/ ?>
