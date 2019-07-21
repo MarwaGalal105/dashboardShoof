@@ -1,7 +1,5 @@
 <?php $__env->startSection('content'); ?>
 
-
-
 	<!-- Home Design -->
 	<div class="home-slider">
 		<div class="container-fluid">
@@ -439,7 +437,7 @@
 	
 
 	
+
+    
 <?php $__env->stopSection(); ?>
-
-
 <?php echo $__env->make('front.layouts.main', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\wamp\www\ShoofToday\resources\views/auth/login.blade.php ENDPATH**/ ?>

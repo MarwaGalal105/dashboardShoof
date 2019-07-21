@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 text-center">
 					<div class="ulockd-cp-title">
-						<h2 class="text-uppercase">CONTACT DETAILS</h2>
+						<h2 class="text-uppercase">اتصل بنا</h2>
 					</div>
 					<div class="ulockd-contact-details">
 						<ul class="list-inline ulockd-contact-place">

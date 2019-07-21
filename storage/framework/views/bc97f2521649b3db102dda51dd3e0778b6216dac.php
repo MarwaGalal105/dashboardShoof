@@ -115,12 +115,8 @@
 									<img class="img-responsive img-whp" src="<?php echo e(asset('public/uploads/'.$info->image)); ?>"  alt="image" height="100" width="150" >
 								</div>
 								<div class="ab-details2">
-									<h4 class="text-thm"><?php echo e($info->type); ?></h4>
-									
-								</div>
-								<div class="ab-details2">
 									<h4 class="text-thm"> <?php echo e($info->type); ?></h4>
-									<a class="btn btn-lg ulockd-btn-thm" href="<?php echo e(url('lostchild/'.$info->id)); ?>">قراءه المزيد</a>
+									<a class="btn btn-lg ulockd-btn-thm" href="<?php echo e(url('findchild/'.$info->id)); ?>">قراءه المزيد</a>
 								</div>
 							</div>
 						</div>

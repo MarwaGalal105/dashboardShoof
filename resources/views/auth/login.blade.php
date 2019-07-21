@@ -1,8 +1,6 @@
 @extends('front.layouts.main')
 @section('content')
 
-
-
 	<!-- Home Design -->
 	<div class="home-slider">
 		<div class="container-fluid">
@@ -625,5 +623,6 @@
 	
 
 	
-@endsection
 
+    
+@endsection
